@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
 
-// div - className=”puzzleBox filterStringPB”
-
-// The first span - className=”puzzleText”
-
-// input - className=”inputLine”
-
-// button - className=”confirmationButton”
-
-// The last span - className=”resultsBox filterStringRB”
-
 export default class FilterString extends Component {
     state = {
         filteredArray: [],
