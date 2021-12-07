@@ -1,15 +1,4 @@
-import React, { Component } from 'react'
-
-// The component outline: One parent div element, one h4 element, one span element, one input element, one button element, and one span element.
-// div - className=”puzzleBox filterObjectPB”
-
-// The first span - className=”puzzleText”
-
-// input - className=”inputLine”
-
-// button - className=”confirmationButton”
-
-// The last span - className=”resultsBox filterObjectRB”
+import React, { Component } from 'react';
 
 export default class FilterObject extends Component {
     state = {
@@ -48,7 +37,7 @@ export default class FilterObject extends Component {
                     {this.state.unFilteredArray.map((obj, idx) => {
                         let keys = Object.keys(obj)
                             return(<div key={idx}>
-                                Object #{idx+1}=> {keys[0]}: {obj[keys[0]]} | {keys[1]}: {obj[keys[1]]}
+                                Object #{idx+1} {keys[0]}: {obj[keys[0]]} | {keys[1]}: {obj[keys[1]]}
                             </div>)
                         } 
                     )}
@@ -60,7 +49,7 @@ export default class FilterObject extends Component {
                     {this.state.filteredArray.map((obj, idx) => {
                         let keys = Object.keys(obj)
                             return(<div key={idx}>
-                                Object #{idx+1}=> {keys[0]}: {obj[keys[0]]} | {keys[1]}: {obj[keys[1]]}
+                                {keys[0]}: {obj[keys[0]]} | {keys[1]}: {obj[keys[1]]}
                             </div>)
                         } 
                     )}
