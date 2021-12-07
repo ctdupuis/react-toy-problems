@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
 
-// div - className=”puzzleBox filterStringPB”
-
-// input - className=”inputLine”
-
-// button - className=”confirmationButton”
-
-// span - className=”resultsBox”
 
 export default class Palindrome extends Component {
     state = {
